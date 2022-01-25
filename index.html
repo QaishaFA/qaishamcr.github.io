@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <style>
+        body {
+            background-color: #f9e4d4;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chemical Romance</title>
+</head>
+<body>
+    <div class="w3-container w3-margin">
+        <img src="mcr.jpg" width="100%">
+    </div>
+
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="openalbum('2002')">2002</button>
+        <button class="w3-bar-item w3-button" onclick="openalbum('2004')">2004</button>
+        <button class="w3-bar-item w3-button" onclick="openalbum('2006')">2006</button>
+        <button class="w3-bar-item w3-button" onclick="openalbum('2010')">2010</button>
+        <button class="w3-bar-item w3-button" onclick="openalbum('2012')">2012</button>
+        <button class="w3-bar-item w3-button" onclick="openalbum('profile')">Profile</button>
+    </div>
+
+    <div id="2002" class="w3-container album" style="display: none;">
+        <center>
+            <h2>I Brought You My Bullets, You Brought Me My Love</h2>
+            <img src="2002.jpg" class="w3-animate-zoom" width="40%" height="30%">
+        <p>
+            I Brought You My Bullets, You Brought Me Your Love merupakan sebuah album musik pertama karya My Chemical Romance dirilis tahun 2002.
+            Lagu utama di album ini ialah Honey, This Mirror Isn't Big Enough for the Two of Us.
+        </p>
+        </center>
+    </div>
+
+    <div id="2004" class="w3-container album" style="display: none;">
+        <center>
+            <h2>Three Cheers For Sweet Revenge</h2>
+            <img src="2004.jpg" class="w3-animate-fading" width="40%" height="30%">
+        <p>
+            Three Cheers For Sweet Revenge adalah album kedua dari band My Chemical Romance.
+            Album ini dirilis pada tahun 2004 melalui Reprise Records.
+        </p>
+        </center>
+    </div>
+
+    <div id="2006" class="w3-container album" style="display: none;">
+        <center>
+            <h2>The Black Parade</h2>
+            <img src="2006.jpg" class="w3-animate-bottom" width="40%" height="30%">
+        <p>
+            The Black Parade adalah album studio ke-3 karya My Chemical Romance. 
+            Album ini dirilis pada tahun 2006 melalui Reprise Records dan diproduseri oleh Rob Cavallo. 
+            Album ini menjadi satu-satunya album yang mengandung permainan drum Bob Bryar sebagai anggota My Chemical Romance, 
+            setelah drummer mereka sebelumnya, Matt Pelissier, meninggalkan MCR pada Juli 2004. 
+            Bob Bryar kemudian juga meninggalkan MCR pada Maret 2010. Album ini adalah album konsep dengan 
+            tema rock opera yang berkisah seputar karakter penderita kanker bernama "The Patient" yang sedang menemui kematian.
+        </p>
+        </center>
+    </div>
+
+    <div id="2010" class="w3-container album" style="display: none;">
+        <center>
+            <h2>Danger Days : The True Lives Of The Fabulous Killjoys</h2>
+            <img src="2010.jpg" class="w3-animate-top" width="40%" height="30%">
+        <p>
+            Danger Days: The True Lives of the Fabulous Killjoys adalah album studio keempat karya band alternative rock Amerika My Chemical Romance. 
+            Album ini diproduseri oleh Rob Cavallo dan dirilis melalui Warner Music dan Reprise Records pada 19 November 2010.
+        </p>
+        </center>
+    </div>
+
+    <div id="2012" class="w3-container album" style="display: none;">
+        <center>
+            <h2>Conventional Weapons</h2>
+            <img src="2012.jpg" class="w3-animate-fading" width="40%" height="30%">
+        <p>
+            Conventional Weapons adalah album kompilasi oleh band rock Amerika My Chemical Romance, 
+            diproduksi oleh Brendan O'Brien dan dirilis sebagai serangkaian singel antara Oktober 2012 dan Februari 2013. 
+            Album ini menandai perilisan materi studio terakhir band sebelum bubar dari 2013 –2019.
+        </p>
+        </center>
+    </div>
+
+    <div id="profile" class="w3-container album" style="display: none;">
+        <center>
+            <h2>Profile</h2>
+            <img src="profile.jpeg" class="w3-animate-top" width="40%" height="30%">
+        <table>
+            <tr>
+                <td>NIM<td> :
+                    <label>10121114</label>
+                </td></td>
+            </tr>
+            <tr>
+                <td>Nama<td> :
+                    <label>Qaisha Fadhil Ahmad</label>
+                </td></td>
+            </tr>
+            <tr>
+                <td>Kelas<td> :
+                    Informatika 3
+                </td></td>
+            </tr>
+        </table>
+        </center>
+    </div>
+
+    <div id="Home" class="w3-container album" style=" ">
+        <center>
+            <h2>My Chemical Romance</h2>
+            <img src="home.jpg" class="w3-animate-fading" width="40%" height="30%">
+        <p>
+            My Chemical Romance adalah grup musik asal New Jersey, yang dibentuk pada bulan September tahun 2001 oleh Gerard Way dan Matt Pelissier. 
+            Saat ini, band ini beranggotakan Gerard Way (vokal), Mikey Way (bass), Ray Toro (lead guitar), dan Frank Iero (gitar ritme).
+            Nama band ini terinspirasi oleh buku karangan Irvine Welsh yaitu Ecstasy: Three Tales of Chemical Romance.
+        </p>
+        </center>
+    </div>
+    
+
+</body>
+</html>
+
+<script>
+    function openalbum(namaalbum) {
+     var i;
+     var x = document.getElementsByClassName("album");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+     }
+     document.getElementById(namaalbum).style.display = "block";
+    }
+</script>
